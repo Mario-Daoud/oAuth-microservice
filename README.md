@@ -1,6 +1,6 @@
 #### user management
 * Port - :8080
-* Endpoints \
-    - POST: `/register` \
-    - POST: `/login` \
+* Endpoints 
+    - POST: `/register` 
+    - POST: `/login` 
 
