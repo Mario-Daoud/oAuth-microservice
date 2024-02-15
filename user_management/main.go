@@ -25,7 +25,6 @@ func getConnectionString() *string {
 	connectionString :=
 		"host=" + os.Getenv("DB_HOST") +
 			" user=" + os.Getenv("DB_USER") +
-            " port=" + os.Getenv("DB_PORT") +
 			" dbname=" + os.Getenv("DB_NAME") +
 			" sslmode=disable" +
 			" password=" + os.Getenv("DB_PASSWORD")
