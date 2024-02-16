@@ -1,20 +1,18 @@
 version: "3"
 
 services:
-  postgres:
+  user_management_db:
     image: postgres
     container_name: user_management_db
     environment:
       POSTGRES_USER: root
       POSTGRES_PASSWORD: rootpass
       POSTGRES_DB: user_management_db
-    ports:
-      - "5432:5432"
     restart: always
     volumes:
       - ./user_management/db_data/:/var/lib/postgresql/data
 
-  yourgoapp:
+  user_management:
     image: user_management
     container_name: user_management
     environment:
@@ -23,8 +21,6 @@ services:
       DB_USER: root
       DB_PASSWORD: rootpass
       DB_NAME: user_management_db
-    ports:
-      - "8080:8080"
     depends_on:
-      - postgres
+      - user_management_db
     restart: always
