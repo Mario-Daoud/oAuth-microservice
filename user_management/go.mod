@@ -1,4 +1,4 @@
-module harbor
+module harbor/user_management
 
 go 1.22.0
 
