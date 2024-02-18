@@ -5,7 +5,7 @@
 
 #### api gateway
 
-#### file_storage
+#### file storage
 * Port :8080
 * Endpoints
     - POST: `/upload` 
